@@ -1,15 +1,15 @@
-package st2i.net.customerservice.config;
+package st2i.net.inventoryservice.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import st2i.net.customerservice.entities.Customer;
+import st2i.net.inventoryservice.entities.Product;
 
 @Configuration
 public class RestRepositoryConfig implements RepositoryRestConfigurer {
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
-        config.exposeIdsFor(Customer.class);
+        config.exposeIdsFor(Product.class);
     }
 }

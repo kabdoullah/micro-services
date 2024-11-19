@@ -1,4 +1,4 @@
-package st2i.net.billingservice.entities;
+package st2i.net.billingservice.dto;
 
 import lombok.Getter;
 import lombok.Setter;
